@@ -221,11 +221,133 @@ p {
   }
 }
 
+// ===== CONTACT FORM FUNCTIONALITY =====
+class ContactService {
+  constructor() {
+    this.form = null;
+    this.submitBtn = null;
+    this.formStatus = null;
+    this.init();
+  }
+
+  init() {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", () => this.setup());
+    } else {
+      this.setup();
+    }
+  }
+
+  setup() {
+    this.form = document.getElementById("contactForm");
+    this.submitBtn = document.querySelector(".submit-btn");
+    this.formStatus = document.getElementById("formStatus");
+
+    if (this.form) {
+      this.setupForm();
+    }
+  }
+
+  setupForm() {
+    this.form.addEventListener("submit", (e) => this.handleSubmit(e));
+  }
+
+  async handleSubmit(e) {
+    e.preventDefault();
+
+    // Get form data
+    const formData = new FormData(this.form);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
+    // Validate form
+    if (!this.validateForm(data)) {
+      return;
+    }
+
+    // Show loading state
+    this.setLoadingState(true);
+
+    // Simulate processing time
+    setTimeout(() => {
+      this.showStatus("success", "Thanks! \nYou enail was sent successfully!");
+      this.form.reset();
+      this.setLoadingState(false);
+    }, 1000);
+  }
+
+  validateForm(data) {
+    // Basic validation
+    if (!data.name.trim()) {
+      this.showStatus("error", "Please enter your name.");
+      return false;
+    }
+
+    if (!data.email.trim() || !this.isValidEmail(data.email)) {
+      this.showStatus("error", "Please enter a valid email address.");
+      return false;
+    }
+
+    if (!data.subject.trim()) {
+      this.showStatus("error", "Please enter a subject.");
+      return false;
+    }
+
+    if (!data.message.trim() || data.message.trim().length < 10) {
+      this.showStatus("error", "Please enter a message with at least 10 characters.");
+      return false;
+    }
+
+    return true;
+  }
+
+  isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+
+  setLoadingState(loading) {
+    if (!this.submitBtn) return;
+
+    const btnText = this.submitBtn.querySelector(".btn-text");
+    const btnLoading = this.submitBtn.querySelector(".btn-loading");
+
+    if (loading) {
+      btnText.style.display = "none";
+      btnLoading.style.display = "inline-flex";
+      this.submitBtn.disabled = true;
+    } else {
+      btnText.style.display = "inline";
+      btnLoading.style.display = "none";
+      this.submitBtn.disabled = false;
+    }
+  }
+
+  showStatus(type, message) {
+    if (!this.formStatus) return;
+
+    this.formStatus.className = `form-status ${type}`;
+    this.formStatus.textContent = message;
+    this.formStatus.style.display = "block";
+
+    // Auto-hide status after 10 seconds
+    setTimeout(() => {
+      this.formStatus.style.display = "none";
+    }, 10000);
+  }
+}
+
 // ===== GLOBAL SERVICES INITIALIZATION =====
 class WebDevGuideApp {
   constructor() {
     this.navigationService = new NavigationService();
     this.sandboxService = new SandboxService();
+    this.contactService = new ContactService();
     this.setupGlobalFunctions();
   }
 
