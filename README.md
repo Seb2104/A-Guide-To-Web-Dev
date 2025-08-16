@@ -48,31 +48,32 @@ tools: Developer Tools - W3C Developers. Your submission must include a report o
 your website.
 Website Hosting
 You must host your website and demonstrate its accessibility via the World Wide Web. You have two options:
+
 1. Virtual Host
-Create a virtual host on your computer using a server stack like XAMPP or WAMP. Your submission in
-this case will be a short video (not more than 5 minutes) showing how you created the virtual server
-and accessed the website from the front-end. Use common sense and edit the video so that it shows
-the important parts.
+   Create a virtual host on your computer using a server stack like XAMPP or WAMP. Your submission in
+   this case will be a short video (not more than 5 minutes) showing how you created the virtual server
+   and accessed the website from the front-end. Use common sense and edit the video so that it shows
+   the important parts.
 2. Online Service
-Sign up with a hosting provider like Afrihost or any of the free ones. Your submission in this case will
-be a short video (not more than 5 minutes) showing how you used FTP software to upload the
-website, as well as a link to the live website.
-Presentation
-Each group will present their website in a 15-20 minute presentation, including a live demo and Q&A session.
-You will be assessed on your ability to demonstrate the website’s functionality, explain your design and
-accessibility choices, and answer questions about your implementation. Questions may cover topics such as
-HTML5 semantics, CSS techniques, accessibility best practices, validation results, and hosting setup.
-Deliverables
-• Website: A fully functional, accessible website meeting all requirements.
-• Research/Reference Document: A 2-3 page document detailing the design process, accessibility
-research, challenges, solutions, and references.
-• Validation Report: A report of the website’s validation results from an online validator service.
-Subject:
-Assessment:
-Web Programming 1781
-Accessibility Project 2025
-• Hosting Submission: A short video (not more than 5 minutes) demonstrating the virtual host or online
-hosting setup, and, if applicable, a link to the live website.
-• Presentation: Deliver a 15-20 minute presentation, including a live demo and Q&A. You must arrive
-with your project fully set up and ready to demonstrate on your device. No time will be provided
-during your timeslot to power on, open, or load your project
+   Sign up with a hosting provider like Afrihost or any of the free ones. Your submission in this case will
+   be a short video (not more than 5 minutes) showing how you used FTP software to upload the
+   website, as well as a link to the live website.
+   Presentation
+   Each group will present their website in a 15-20 minute presentation, including a live demo and Q&A session.
+   You will be assessed on your ability to demonstrate the website’s functionality, explain your design and
+   accessibility choices, and answer questions about your implementation. Questions may cover topics such as
+   HTML5 semantics, CSS techniques, accessibility best practices, validation results, and hosting setup.
+   Deliverables
+   • Website: A fully functional, accessible website meeting all requirements.
+   • Research/Reference Document: A 2-3 page document detailing the design process, accessibility
+   research, challenges, solutions, and references.
+   • Validation Report: A report of the website’s validation results from an online validator service.
+   Subject:
+   Assessment:
+   Web Programming 1781
+   Accessibility Project 2025
+   • Hosting Submission: A short video (not more than 5 minutes) demonstrating the virtual host or online
+   hosting setup, and, if applicable, a link to the live website.
+   • Presentation: Deliver a 15-20 minute presentation, including a live demo and Q&A. You must arrive
+   with your project fully set up and ready to demonstrate on your device. No time will be provided
+   during your timeslot to power on, open, or load your project
