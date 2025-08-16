@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - A Guide To Web Dev</title>
+    <title>Sandbox - A Guide To Web Dev</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -30,10 +30,10 @@
                         <a href="css.html" class="nav-link">CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="projects.html" class="nav-link active">Projects</a>
+                        <a href="projects.html" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="sandbox.html" class="nav-link">Sandbox</a>
+                        <a href="sandbox.html" class="nav-link active">Sandbox</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About</a>
@@ -52,19 +52,110 @@
     </header>
 
     <main class="main-content">
-        <section class="hero">
+        <section class="hero" style="min-height: 40vh;">
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        Build Amazing <span class="gradient-text">Projects</span>
+                        Code <span class="gradient-text">Sandbox</span>
                     </h1>
                     <p class="hero-description">
-                        Put your HTML and CSS skills to the test with real-world projects. 
-                        Build stunning websites and applications while learning best practices.
+                        Experiment with HTML and CSS in real-time. Write your code and see the results instantly
+                        in this interactive playground designed for learning and creativity.
                     </p>
                 </div>
             </div>
         </section>
+
+        <div class="sandbox-controls">
+            <button class="control-btn" onclick="runCode()">
+                <i class="fas fa-play"></i>
+                Run Code
+            </button>
+            <button class="control-btn secondary" onclick="clearCode()">
+                <i class="fas fa-trash"></i>
+                Clear All
+            </button>
+            <button class="control-btn secondary" onclick="loadExample()">
+                <i class="fas fa-lightbulb"></i>
+                Load Example
+            </button>
+        </div>
+
+        <div class="sandbox-container">
+            <div class="html-column">
+                <div class="editor-panel">
+                    <div class="editor-header">
+                        <i class="fab fa-html5"></i>
+                        index.html
+                    </div>
+                    <textarea class="code-editor" id="htmlEditor" placeholder="Write your HTML code here..."><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website!</h1>
+    <p>This is a paragraph with some text.</p>
+    <button>Click Me!</button>
+</body>
+</html></textarea>
+                </div>
+            </div>
+
+            <!-- Right Column: Preview + CSS -->
+            <div class="preview-css-column">
+                <!-- Preview Panel -->
+                <div class="preview-panel">
+                    <iframe class="preview-frame" id="previewFrame"></iframe>
+                </div>
+
+                <!-- CSS Editor -->
+                <div class="editor-panel">
+                    <div class="editor-header">
+                        <i class="fab fa-css3-alt"></i>
+                        styles.css
+                    </div>
+                    <textarea class="code-editor" id="cssEditor" placeholder="Write your CSS code here...">body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}</textarea>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
