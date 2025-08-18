@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
     <header class="banner">
         <nav class="navbar">
             <div class="nav-container">
@@ -21,7 +22,7 @@
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="home.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="html.html" class="nav-link active">HTML</a>
@@ -51,7 +52,7 @@
         </nav>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content">
         <section class="hero">
             <div class="hero-content">
                 <div class="hero-text">
@@ -62,6 +63,216 @@
                         Learn the building blocks of the web with comprehensive HTML tutorials,
                         examples, and hands-on practice exercises.
                     </p>
+                     <section>
+                        <div class="Intro-Box">
+                                <h2 class="html-headings">Introduction to html </h2>
+                                <p class="Question-What" > What is html?</p>
+                                <p id="Intro-para"><strong>HTML</strong>, or <strong>Hyper Text Markup Language</strong>, is the primary language used to format web content. It organizes text, pictures, links, and media into tags and elements that browsers can understand. By 2025, HTML, together with CSS and JavaScript, will account for more than 95% of all websites, making it a critical tool in modern web development. </p>
+                                <img src="https://mariechatfield.com/blog/html-vs-dom/slide_htmlDefinition.png" alt="Picture of somesort" width="500px" height="300px">
+                                <ul class="intro-List">
+                                    <li>It is a markup language and not a programming language. This implies that it annotates text to determine how web browsers will organize and display it.</li>
+                                    <li>It is a static language, which means it does not have built-in interactive capabilities but may be paired with CSS for style and JavaScript for interaction. </li>
+                                </ul> 
+                        </div>
+                        <br>
+                        <div>
+                            <h2 class="html-headings">Basic html code example </h2>
+                            <img src="https://codingali.com/wp-content/uploads/2018/06/img3.png" alt="insert an image" width="500px" height="300px">
+                            <img src="https://www.w3schools.com/html/img_chrome.png" alt="insert an image"  width="500px" height="300px">
+                            <h2> Html Page structure</h2>
+                            <img src="https://csveda.com/wp-content/uploads/2020/02/HTML_Structure.png" alt="insert an image"  width="500px" height="300px">
+                            <table>
+                                <tr>
+                                    <th> Tag</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                   <td><code>&lt;!DOCTYPE&gt;</code> </td>
+                                   <td>This is the document type declaration, not a tag. It declares that the document is an HTML5 document.</td>
+                                </tr>
+                                <tr>
+                                    <td> <code>&lt;html&gt;</code></td>
+                                    <td>his is called the HTML root element. All other elements are contained within it.</td>
+                                 </tr>
+                                 <tr>
+                                    <td> <code>&lt;head&gt;</code></td>
+                                    <td>The <code>&lt;head&gt;</code> tag contains the "behind the scenes" elements for a webpage. Elements within the head aren't visible on the front end of a webpage</td>
+                                 </tr>
+                                 <tr>
+                                    <td> <code>&lt;title&gt;</code> to <code>&lt;h6&gt;</code></td>
+                                    <td>Defines the title displayed on the browser tab.</td>
+                                 </tr>
+                                 <tr>
+                                    <td> <code>&lt;link&gt;</code></td>
+                                    <td>Links external stylesheets or resources.</td>
+                                 </tr>
+                                 <tr>
+                                    <td> <code>&lt;meta&gt;</code></td>
+                                    <td>Provides information like the character set or viewport settings.</td>
+                                 </tr>
+                                 <tr>
+                                    <td><code>&lt;style&gt;</code></td>
+                                    <td>Embeds internal CSS styles.</td>
+                                 </tr>
+                                 <tr>
+                                    <td><code>&lt;script&gt;</code></td>
+                                    <td>Embeds JavaScript for functionality.</td>
+                                 </tr>
+                                 <tr>
+                                    <td><code>&lt;title&gt;</code></td>
+                                    <td> The title is what is displayed on the top of your browser when you visit a website and contains the title of the webpage that you are viewing.</td>
+                                 </tr>
+                                 <tr>
+                                    <td> <code>&lt;h2&gt;</code></td>
+                                    <td>The  <code>&lt;h2&gt;</code> tag is a second-level heading tag.</td>
+                                 </tr>
+                                 <tr>
+                                    <td> <code>&lt;p&gt;</code></td>
+                                    <td>The <code>&lt;p&gt;</code> tag represents a paragraph of text.</td>
+                                 </tr>
+                                 <tr>
+                                    <td> <code>&lt;body&gt;</code></td>
+                                    <td>The body tag is used to enclose all the visible content of a webpage. In other words, the body content is what the browser will show on the front end.</td>
+                                 </tr>    
+                            </table>
+                        </div>
+                        <br>
+                        <div>
+                           <h2 class="html-headings">HTML Elements and HTML Tags</h2> 
+                            <p><span class="HET">HTML</span> elements are defined by an opening tag followed but the content then ending with a closing tag.</p>
+                            <p><span  class="HET">HTML</span> tags is the content stored within the html elements</p>
+                            <img src="https://i.sstatic.net/JFL1P.png" alt="Diagram showing the difference between HTML elements and HTML tags" width="500" height="300">
+                            <div>
+                                <table >
+                                    <tr>
+                                        <th> Tag</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                       <td><code>&lt;html&gt;</code> </td>
+                                       <td>The root element of an HTML document</td>
+                                    </tr>
+                                    <tr>
+                                        <td> <code>&lt;head&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td> <code>&lt;body&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td> <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td> <code>&lt;p&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td> <code>&lt;a&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td><code>&lt;img&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td><code>&lt;ul&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td><code>&lt;ol&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td> <code>&lt;li&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td> <code>&lt;table&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                     <tr>
+                                        <td> <code>&lt;form&gt;</code></td>
+                                        <td>The root element of an HTML document</td>
+                                     </tr>
+                                </table>
+                            </div>
+                            <br>
+                            <div>
+                                <h2 class="html-headings">HTML Attributes</h2>
+                                <p>Attributes provide adiitional inforamtion about an element. <br> They are placed inside the opening tag and are written as <br> name="value". Commmon attributes include class,id, href and src</p>
+                                <img src="https://dotnettutorials.net/wp-content/uploads/2021/10/word-image-115.png" alt="insert image" width="500px" height="300px">
+                                <li> href is an attribute of the <code>&lt;a&gt;</code>tag that defines the URL of the link </li>
+                            </div>
+                            <br>
+                            <div>
+                                <h2 class="html-headings">Web Browser</h2>
+                                <p>The purpose of a web browser(Chrome,Edge,Firefox,Safari) is to read HTML documents and display them corrrectly</p>
+                                <p>A web browser does not display the HTML tags, but uses them to determine how to display the html document</p>
+                                <img src="https://www.datocms-assets.com/48294/1729620814-a-list-of-popular-web-browsers-of-today.webp?auto=format" alt="insert image" width="500px" height="300px">
+                                <p>Example of how HTML displays in a web browser:</p>
+                                <img src="https://www.w3schools.com/html/img_chrome.png" alt="" width="500px" height="300px">
+                            </div>
+                            <br>
+                            <div>
+                                <h2 class="html-headings">Why Learn Html</h2>
+                                <h4 class="html-headings"><strong>5 common reasons to lean HTML:</strong></h4>
+                                <ol  class="Basic-html-ul">
+                                    <li>Build Websites: HTML is the basic building block for creating any website.</li>
+                                    <li>Customize Content: Allows you to edit web pages, emails, or templates to fit your needs</li>
+                                    <li>Understand how the web works: This helps ypu grasp how web pages are found and how the web works</li>
+                                    <li>Employment Opportunities</li>
+                                    <li>Learn Easily: HTML is beginner-friendly, making it a great first step into the world of coding and technology</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <h2 class="html-headings">Applications of HTML</h2>
+                                <ul  class="Basic-html-ul">
+                                    <li>Web Development: HTML is the backbone of every <br> webpage. It structures the content and intergrates multimedia, <br> hyperlinks and more</li>
+                                    <li>Web Applications: HTML in combination with Css and Javascript, powers complex web applications</li>
+                                    <li>Emails: HTML emails use table-based layouts and embedded media to deliver rich, interactive content</li>
+                                    <li>Mobile App Development: HTML5 is used with frameworks like PhoneGap to build mobile apps for iOS amd Android</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="html-headings">Limitations of HTML</h2>
+                                <ul  class="Basic-html-ul">
+                                    <li>No Logic or Functionality: HTML ca not handle complex logic, interactivity or dynamic content on its own. it requires JavaScript for such tasks.</li>
+                                    <li>SEO Limitations: While HTML provides structure, its mot enough by itself for sesarch engine optimization. Proper metadat and content structuring, as well as external SEO practices are necessary</li>
+                                    <li>Limited Styles: While HTML can handle basic styles via the style attribute, it is typically complemented by CSS for complex styling and layout</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="html-headings">HTML5: Enhancements and New Features</h2>
+                                <p>HTML5 Introduced several powerful features that improve the structure and functionality of web pages, including:</p>
+                                <ul  class="Basic-html-ul">
+                                    <li>Semantics:New tags like article, footer header, and section to improve the meaning of the content</li>
+                                    <li>Multimedia:audio and video tages for embedding audio and video without plugins</li>
+                                    <li>APIs: HTML emails use table-based layouts and embedded media to deliver rich, interactive content</li>
+                                    <li>Mobile App Development: HTML5 is used with frameworks like PhoneGap to build mobile apps for iOS amd Android</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="html-headings">HTML History</h2>
+                                <p> We are curently using HTML5, which his the latest and most advanced version of HTML</p>
+                                <ul  class="Basic-html-ul">
+                                    <li>HTML was intially created by Tim Berners-Lee in 1991 as a way to share and structure documents on the web</li>
+                                    <li>The first-ever version was HTML 1.0, a basic and limited version. However, the first standardized version, HTML 2.0, was published in 1995, laying the foundation for web development as we know it today.</l>
+
+                                </ul>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp7NOz9dsU_wbT8D_6E3TpD4fV_VJapfiMrQ&s" alt="insert image" width="600px" height="300px">
+                            </div>
+                            <div>
+                                <h2 class="html-headings">Applications of HTML</h2>
+                                <ul  class="Basic-html-ul">
+                                    <li>Web Development: HTML is the backbone of every <br> webpage. It structures the content and intergrates multimedia, <br> hyperlinks and more</li>
+                                    <li>Web Applications: HTML in combination with Css and Javascript, powers complex web applications</li>
+                                    <li>Emails: HTML emails use table-based layouts and embedded media to deliver rich, interactive content</li>
+                                    <li>Mobile App Development: HTML5 is used with frameworks like PhoneGap to build mobile apps for iOS amd Android</li>
+                                </ul>
+                            </div>
+                     </section>
                 </div>
             </div>
         </section>

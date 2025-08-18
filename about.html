@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about our mission to make web development accessible to everyone through comprehensive HTML and CSS tutorials.">
     <title>About - A Guide To Web Dev</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -12,6 +13,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
     <header class="banner">
         <nav class="navbar">
             <div class="nav-container">
@@ -51,7 +53,7 @@
         </nav>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content">
         <section class="hero">
             <div class="hero-content">
                 <div class="hero-text">
@@ -67,34 +69,110 @@
             </div>
         </section>
 
-        <!-- Add your about content here -->
         <section class="features">
             <div class="container">
                 <h2 class="section-title">Our Story</h2>
+                <div class="about-intro">
+                    <p>WebDev Guide was created with a simple but powerful mission: to make web development education accessible, engaging, and effective for learners of all backgrounds. We believe that everyone deserves the opportunity to learn how to build for the web, regardless of their starting point or experience level.</p>
+                </div>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
                         </div>
                         <h3>Our Vision</h3>
-                        <p>To democratize web development education and make it accessible to learners of all
-                            backgrounds and experience levels.</p>
+                        <p>To democratize web development education and make it accessible to learners of all backgrounds and experience levels. We envision a world where creating for the web is within everyone's reach.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart" aria-hidden="true"></i>
                         </div>
                         <h3>Our Passion</h3>
-                        <p>We love creating beautiful, functional websites and sharing that knowledge with aspiring
-                            developers worldwide.</p>
+                        <p>We love creating beautiful, functional websites and sharing that knowledge with aspiring developers worldwide. Every tutorial is crafted with care and attention to detail.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-users" aria-hidden="true"></i>
                         </div>
                         <h3>Our Community</h3>
-                        <p>Building a supportive community where learners can grow, share experiences, and help each
-                            other succeed.</p>
+                        <p>Building a supportive community where learners can grow, share experiences, and help each other succeed. Together, we're stronger and learn faster.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="learning-path">
+            <div class="container">
+                <h2 class="section-title">What Makes Us Different</h2>
+                <div class="path-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-universal-access" aria-hidden="true"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Accessibility First</h3>
+                            <p>Every tutorial and example is designed with accessibility in mind. We teach best practices for creating inclusive web experiences that work for everyone, including users with disabilities.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Hands-On Learning</h3>
+                            <p>We believe in learning by doing. Our interactive sandbox environment lets you experiment with code in real-time, seeing immediate results as you learn.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Progressive Learning</h3>
+                            <p>Our curriculum is carefully structured to build knowledge progressively. Start with the basics and gradually work your way up to advanced concepts at your own pace.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Students Taught</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Interactive Lessons</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Accessibility Score</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Learning Access</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Web Development Journey?</h2>
+                    <p>Join thousands of learners who have discovered the joy of creating for the web. Start with our HTML fundamentals and build your way up to creating amazing websites.</p>
+                    <div class="hero-buttons">
+                        <a href="html.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                            Start Learning HTML
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary btn-large">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            Get in Touch
+                        </a>
                     </div>
                 </div>
             </div>
