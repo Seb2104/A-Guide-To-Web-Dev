@@ -60,11 +60,46 @@ a {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4683ff 0%, #001b49 25%, #e53e3e 50%, #dd6b20 75%, #d69e2e 100%);
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-shadow: 0 0 20px rgba(229, 62, 62, 0.4);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    animation: gradientShift 3s ease-in-out infinite;
+    position: relative;
+    font-weight: 800;
 }
+
+.gradient-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 25%, #e53e3e 50%, #dd6b20 75%, #d69e2e 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: blur(1px);
+    opacity: 0.5;
+    z-index: -1;
+    animation: gradientShift 3s ease-in-out infinite reverse;
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
 
 /* ===== NAVIGATION BANNER ===== */
 .banner {
