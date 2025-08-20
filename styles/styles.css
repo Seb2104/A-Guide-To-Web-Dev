@@ -36,39 +36,39 @@
      font-size: clamp(2rem, 4vw, 3rem);
  }
 
-h3 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    color: #ffffff;
-    font-weight: 700;
-}
+ h3 {
+     font-size: clamp(1.5rem, 3vw, 2rem);
+     color: #ffffff;
+     font-weight: 700;
+ }
 
-#feature-title {
-    color: #ffffff;
-    font-weight: 700;
-}
+ #feature-title {
+     color: #ffffff;
+     font-weight: 700;
+ }
 
-p {
-    margin-bottom: 1rem;
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.8;
-}
+ p {
+     margin-bottom: 1rem;
+     color: #ffffff;
+     font-size: 1.2rem;
+     font-weight: 500;
+     line-height: 1.8;
+ }
 
-#pp {
-    margin-bottom: 1rem;
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.8;
-}
+ #pp {
+     margin-bottom: 1rem;
+     color: #ffffff;
+     font-size: 1.2rem;
+     font-weight: 500;
+     line-height: 1.8;
+ }
 
 
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s ease;
-}
+ a {
+     text-decoration: none;
+     color: inherit;
+     transition: all 0.3s ease;
+ }
 
  /* ===== UTILITIES ===== */
  .container {
@@ -325,13 +325,13 @@ a {
      line-height: 1.1;
  }
 
-.hero-description {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-    line-height: 1.6;
-    color: white;
-}
+ .hero-description {
+     font-size: 1.25rem;
+     margin-bottom: 2rem;
+     opacity: 0.9;
+     line-height: 1.6;
+     color: white;
+ }
 
  .hero-buttons {
      display: flex;
@@ -450,13 +450,13 @@ a {
      background: white;
  }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 4rem;
-    color: #000000;
-    font-weight: 800;
-    font-size: 2.5rem;
-}
+ .section-title {
+     text-align: center;
+     margin-bottom: 4rem;
+     color: #000000;
+     font-weight: 800;
+     font-size: 2.5rem;
+ }
 
  .features-grid {
      display: grid;
@@ -464,15 +464,15 @@ a {
      gap: 2rem;
  }
 
-.feature-card {
-    background: #ffffff;
-    padding: 2.5rem;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    border: 3px solid #000000;
-}
+ .feature-card {
+     background: #ffffff;
+     padding: 2.5rem;
+     border-radius: 16px;
+     text-align: center;
+     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+     transition: all 0.3s ease;
+     border: 3px solid #000000;
+ }
 
  .feature-card:hover {
      transform: translateY(-8px);
@@ -492,19 +492,19 @@ a {
      font-size: 2rem;
  }
 
-.feature-card h3 {
-    margin-bottom: 1rem;
-    color: #000000;
-    font-weight: 700;
-    font-size: 1.5rem;
-}
+ .feature-card h3 {
+     margin-bottom: 1rem;
+     color: #000000;
+     font-weight: 700;
+     font-size: 1.5rem;
+ }
 
-.feature-card p {
-    color: #000000;
-    line-height: 1.8;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
+ .feature-card p {
+     color: #000000;
+     line-height: 1.8;
+     font-weight: 500;
+     font-size: 1.1rem;
+ }
 
  /* ===== LEARNING PATH SECTION ===== */
  .learning-path {
@@ -565,20 +565,20 @@ a {
      max-width: 300px;
  }
 
-.timeline-content h3 {
-    color: #ffffff;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-}
+ .timeline-content h3 {
+     color: #ffffff;
+     margin-bottom: 1rem;
+     font-weight: 700;
+     font-size: 1.5rem;
+ }
 
-.timeline-content p {
-    color: #ffffff;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
+ .timeline-content p {
+     color: #ffffff;
+     margin-bottom: 1.5rem;
+     font-weight: 500;
+     font-size: 1.1rem;
+     line-height: 1.8;
+ }
 
  .timeline-link {
      color: #667eea;
@@ -631,20 +631,20 @@ a {
      text-align: center;
  }
 
-.cta-content h2 {
-    margin-bottom: 1rem;
-    color: #000000;
-    font-weight: 800;
-    font-size: 2.5rem;
-}
+ .cta-content h2 {
+     margin-bottom: 1rem;
+     color: #000000;
+     font-weight: 800;
+     font-size: 2.5rem;
+ }
 
-.cta-content p {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-    color: #000000;
-    font-weight: 500;
-    line-height: 1.8;
-}
+ .cta-content p {
+     font-size: 1.4rem;
+     margin-bottom: 2rem;
+     color: #000000;
+     font-weight: 500;
+     line-height: 1.8;
+ }
 
  /* ===== FOOTER ===== */
  .footer {
@@ -1403,7 +1403,6 @@ a {
      padding: 20px;
      position: relative;
      right: 25px;
-
  }
 
  th,
